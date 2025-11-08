@@ -1,0 +1,190 @@
+### INÍCIO DA ANÁLISE DE ARQUITETURA ###
+Repositório: Scrapegraph-ai
+Modelo: facebook/bart-large-mnli
+----------------------------------------
+
+Iniciando varredura de arquivos .md em: Scrapegraph-ai...
+
+== Analisando Arquivo: Scrapegraph-ai\CHANGELOG.md ==
+Padrão Inferido: Layered Architecture (MVC or similar) (Score: 0.2839)
+    - Pipe and Filter / Pipeline Architecture: 0.2766
+    - Monolithic Application: 0.2346
+    - Microservices Architecture: 0.2049
+
+== Analisando Arquivo: Scrapegraph-ai\CODE_OF_CONDUCT.md ==
+Padrão Inferido: Monolithic Application (Score: 0.2736)
+    - Pipe and Filter / Pipeline Architecture: 0.2586
+    - Layered Architecture (MVC or similar): 0.2568
+    - Microservices Architecture: 0.2110
+
+== Analisando Arquivo: Scrapegraph-ai\CONTRIBUTING.md ==
+Padrão Inferido: Layered Architecture (MVC or similar) (Score: 0.2937)
+    - Pipe and Filter / Pipeline Architecture: 0.2869
+    - Microservices Architecture: 0.2239
+    - Monolithic Application: 0.1956
+
+== Analisando Arquivo: Scrapegraph-ai\README.md ==
+Padrão Inferido: Pipe and Filter / Pipeline Architecture (Score: 0.2877)
+    - Microservices Architecture: 0.2599
+    - Layered Architecture (MVC or similar): 0.2524
+    - Monolithic Application: 0.1999
+
+-- Ignorando (muito pequeno): Scrapegraph-ai\SECURITY.md
+
+== Analisando Arquivo: Scrapegraph-ai\.github\ISSUE_TEMPLATE\bug_report.md ==
+Padrão Inferido: Layered Architecture (MVC or similar) (Score: 0.2820)
+    - Pipe and Filter / Pipeline Architecture: 0.2527
+    - Monolithic Application: 0.2414
+    - Microservices Architecture: 0.2240
+
+-- Ignorando (muito pequeno): Scrapegraph-ai\.github\ISSUE_TEMPLATE\custom.md
+
+== Analisando Arquivo: Scrapegraph-ai\.github\ISSUE_TEMPLATE\feature_request.md ==
+Padrão Inferido: Pipe and Filter / Pipeline Architecture (Score: 0.3315)
+    - Layered Architecture (MVC or similar): 0.2331
+    - Monolithic Application: 0.2199
+    - Microservices Architecture: 0.2155
+
+== Analisando Arquivo: Scrapegraph-ai\docs\chinese.md ==
+Padrão Inferido: Layered Architecture (MVC or similar) (Score: 0.3753)
+    - Pipe and Filter / Pipeline Architecture: 0.2619
+    - Microservices Architecture: 0.1829
+    - Monolithic Application: 0.1799
+
+== Analisando Arquivo: Scrapegraph-ai\docs\japanese.md ==
+Padrão Inferido: Layered Architecture (MVC or similar) (Score: 0.3105)
+    - Pipe and Filter / Pipeline Architecture: 0.2746
+    - Monolithic Application: 0.2103
+    - Microservices Architecture: 0.2047
+
+== Analisando Arquivo: Scrapegraph-ai\docs\korean.md ==
+Padrão Inferido: Pipe and Filter / Pipeline Architecture (Score: 0.3290)
+    - Layered Architecture (MVC or similar): 0.2432
+    - Monolithic Application: 0.2178
+    - Microservices Architecture: 0.2100
+
+== Analisando Arquivo: Scrapegraph-ai\docs\README.md ==
+Padrão Inferido: Pipe and Filter / Pipeline Architecture (Score: 0.3059)
+    - Monolithic Application: 0.2616
+    - Layered Architecture (MVC or similar): 0.2262
+    - Microservices Architecture: 0.2063
+
+== Analisando Arquivo: Scrapegraph-ai\docs\russian.md ==
+Padrão Inferido: Pipe and Filter / Pipeline Architecture (Score: 0.2539)
+    - Microservices Architecture: 0.2503
+    - Monolithic Application: 0.2500
+    - Layered Architecture (MVC or similar): 0.2458
+
+== Analisando Arquivo: Scrapegraph-ai\docs\turkish.md ==
+Padrão Inferido: Layered Architecture (MVC or similar) (Score: 0.2677)
+    - Pipe and Filter / Pipeline Architecture: 0.2619
+    - Monolithic Application: 0.2593
+    - Microservices Architecture: 0.2111
+
+== Analisando Arquivo: Scrapegraph-ai\examples\readme.md ==
+Padrão Inferido: Pipe and Filter / Pipeline Architecture (Score: 0.6902)
+    - Layered Architecture (MVC or similar): 0.2041
+    - Microservices Architecture: 0.0701
+    - Monolithic Application: 0.0356
+
+== Analisando Arquivo: Scrapegraph-ai\examples\code_generator_graph\README.md ==
+Padrão Inferido: Layered Architecture (MVC or similar) (Score: 0.2730)
+    - Microservices Architecture: 0.2606
+    - Pipe and Filter / Pipeline Architecture: 0.2494
+    - Monolithic Application: 0.2170
+
+== Analisando Arquivo: Scrapegraph-ai\examples\csv_scraper_graph\README.md ==
+Padrão Inferido: Microservices Architecture (Score: 0.2847)
+    - Layered Architecture (MVC or similar): 0.2475
+    - Monolithic Application: 0.2392
+    - Pipe and Filter / Pipeline Architecture: 0.2286
+
+== Analisando Arquivo: Scrapegraph-ai\examples\custom_graph\README.md ==
+Padrão Inferido: Pipe and Filter / Pipeline Architecture (Score: 0.3453)
+    - Microservices Architecture: 0.2803
+    - Layered Architecture (MVC or similar): 0.2106
+    - Monolithic Application: 0.1638
+
+== Analisando Arquivo: Scrapegraph-ai\examples\depth_search_graph\README.md ==
+Padrão Inferido: Microservices Architecture (Score: 0.2968)
+    - Layered Architecture (MVC or similar): 0.2561
+    - Monolithic Application: 0.2312
+    - Pipe and Filter / Pipeline Architecture: 0.2158
+
+== Analisando Arquivo: Scrapegraph-ai\examples\document_scraper_graph\README.md ==
+Padrão Inferido: Layered Architecture (MVC or similar) (Score: 0.2829)
+    - Microservices Architecture: 0.2806
+    - Pipe and Filter / Pipeline Architecture: 0.2358
+    - Monolithic Application: 0.2006
+
+== Analisando Arquivo: Scrapegraph-ai\examples\document_scraper_graph\openai\inputs\markdown_example.md ==
+Padrão Inferido: Layered Architecture (MVC or similar) (Score: 0.3351)
+    - Microservices Architecture: 0.2794
+    - Monolithic Application: 0.2663
+    - Pipe and Filter / Pipeline Architecture: 0.1193
+
+== Analisando Arquivo: Scrapegraph-ai\examples\json_scraper_graph\README.md ==
+Padrão Inferido: Microservices Architecture (Score: 0.2822)
+    - Layered Architecture (MVC or similar): 0.2621
+    - Monolithic Application: 0.2368
+    - Pipe and Filter / Pipeline Architecture: 0.2188
+
+== Analisando Arquivo: Scrapegraph-ai\examples\markdownify\readme.md ==
+Padrão Inferido: Pipe and Filter / Pipeline Architecture (Score: 0.3751)
+    - Layered Architecture (MVC or similar): 0.3571
+    - Microservices Architecture: 0.1347
+    - Monolithic Application: 0.1331
+
+== Analisando Arquivo: Scrapegraph-ai\examples\omni_scraper_graph\README.md ==
+Padrão Inferido: Microservices Architecture (Score: 0.3026)
+    - Monolithic Application: 0.2652
+    - Layered Architecture (MVC or similar): 0.2300
+    - Pipe and Filter / Pipeline Architecture: 0.2021
+
+== Analisando Arquivo: Scrapegraph-ai\examples\script_generator_graph\README.md ==
+Padrão Inferido: Microservices Architecture (Score: 0.3374)
+    - Layered Architecture (MVC or similar): 0.2673
+    - Pipe and Filter / Pipeline Architecture: 0.2022
+    - Monolithic Application: 0.1932
+
+== Analisando Arquivo: Scrapegraph-ai\examples\search_graph\README.md ==
+Padrão Inferido: Microservices Architecture (Score: 0.2844)
+    - Monolithic Application: 0.2579
+    - Pipe and Filter / Pipeline Architecture: 0.2386
+    - Layered Architecture (MVC or similar): 0.2191
+
+-- Ignorando (muito pequeno): Scrapegraph-ai\examples\search_graph\scrapegraphai\readme.md
+
+== Analisando Arquivo: Scrapegraph-ai\examples\smart_scraper_graph\scrapegraphai\readme.md ==
+Padrão Inferido: Pipe and Filter / Pipeline Architecture (Score: 0.2930)
+    - Microservices Architecture: 0.2842
+    - Layered Architecture (MVC or similar): 0.2476
+    - Monolithic Application: 0.1751
+
+== Analisando Arquivo: Scrapegraph-ai\examples\speech_graph\README.md ==
+Padrão Inferido: Monolithic Application (Score: 0.2826)
+    - Microservices Architecture: 0.2680
+    - Layered Architecture (MVC or similar): 0.2497
+    - Pipe and Filter / Pipeline Architecture: 0.1997
+
+== Analisando Arquivo: Scrapegraph-ai\examples\xml_scraper_graph\README.md ==
+Padrão Inferido: Microservices Architecture (Score: 0.2825)
+    - Pipe and Filter / Pipeline Architecture: 0.2540
+    - Layered Architecture (MVC or similar): 0.2378
+    - Monolithic Application: 0.2256
+
+== Analisando Arquivo: Scrapegraph-ai\tests\Readme.md ==
+Padrão Inferido: Microservices Architecture (Score: 0.2879)
+    - Layered Architecture (MVC or similar): 0.2778
+    - Monolithic Application: 0.2513
+    - Pipe and Filter / Pipeline Architecture: 0.1830
+
+
+### === RESUMO GERAL DA ANÁLISE DE DOCUMENTAÇÃO === ###
+Contagem de padrões inferidos (com maior score) nos arquivos .md analisados:
+- Layered Architecture (MVC or similar): 9 arquivo(s)
+- Pipe and Filter / Pipeline Architecture: 9 arquivo(s)
+- Microservices Architecture: 8 arquivo(s)
+- Monolithic Application: 2 arquivo(s)
+
+Análise concluída.

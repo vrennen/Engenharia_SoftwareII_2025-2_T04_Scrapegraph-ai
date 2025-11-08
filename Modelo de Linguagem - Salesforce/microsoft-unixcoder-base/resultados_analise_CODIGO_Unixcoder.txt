@@ -1,0 +1,1211 @@
+### INÍCIO DA ANÁLISE DE CÓDIGO FONTE (.py) ###
+Repositório: Scrapegraph-ai
+Modelo: microsoft/unixcoder-base
+----------------------------------------
+
+Iniciando varredura de arquivos .py em: Scrapegraph-ai...
+
+== Analisando Arquivo: Scrapegraph-ai\docs\source\conf.py ==
+Padrão Inferido: Microservices (Similaridade: 0.1233)
+    - Pipe and Filter: 0.0654
+    - Layered / MVC: 0.0460
+    - Monolithic: 0.0861
+
+== Analisando Arquivo: Scrapegraph-ai\examples\code_generator_graph\ollama\code_generator_graph_ollama.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1184)
+    - Layered / MVC: -0.0133
+    - Microservices: 0.0338
+    - Monolithic: 0.0385
+
+== Analisando Arquivo: Scrapegraph-ai\examples\code_generator_graph\openai\code_generator_graph_openai.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1220)
+    - Layered / MVC: -0.0153
+    - Microservices: 0.0517
+    - Monolithic: 0.0353
+
+== Analisando Arquivo: Scrapegraph-ai\examples\csv_scraper_graph\ollama\csv_scraper_graph_multi_ollama.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1849)
+    - Layered / MVC: 0.0132
+    - Microservices: 0.0790
+    - Monolithic: 0.0600
+
+== Analisando Arquivo: Scrapegraph-ai\examples\csv_scraper_graph\ollama\csv_scraper_ollama.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1620)
+    - Layered / MVC: 0.0034
+    - Microservices: 0.0643
+    - Monolithic: 0.0443
+
+== Analisando Arquivo: Scrapegraph-ai\examples\csv_scraper_graph\openai\csv_scraper_graph_multi_openai.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.2435)
+    - Layered / MVC: -0.0018
+    - Microservices: 0.1002
+    - Monolithic: 0.0417
+
+== Analisando Arquivo: Scrapegraph-ai\examples\csv_scraper_graph\openai\csv_scraper_openai.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.2152)
+    - Layered / MVC: -0.0169
+    - Microservices: 0.0827
+    - Monolithic: 0.0252
+
+== Analisando Arquivo: Scrapegraph-ai\examples\custom_graph\ollama\custom_graph_ollama.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0880)
+    - Layered / MVC: 0.0015
+    - Microservices: 0.0790
+    - Monolithic: 0.0464
+
+== Analisando Arquivo: Scrapegraph-ai\examples\custom_graph\openai\custom_graph_openai.py ==
+Padrão Inferido: Microservices (Similaridade: 0.0926)
+    - Pipe and Filter: 0.0909
+    - Layered / MVC: 0.0020
+    - Monolithic: 0.0439
+
+== Analisando Arquivo: Scrapegraph-ai\examples\depth_search_graph\ollama\depth_search_graph_ollama.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1416)
+    - Layered / MVC: 0.0197
+    - Microservices: 0.1215
+    - Monolithic: 0.1033
+
+== Analisando Arquivo: Scrapegraph-ai\examples\depth_search_graph\openai\depth_search_graph_openai.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1935)
+    - Layered / MVC: 0.0167
+    - Microservices: 0.1559
+    - Monolithic: 0.1040
+
+== Analisando Arquivo: Scrapegraph-ai\examples\document_scraper_graph\ollama\document_scraper_ollama.py ==
+Padrão Inferido: Monolithic (Similaridade: 0.1090)
+    - Pipe and Filter: 0.1040
+    - Layered / MVC: 0.0237
+    - Microservices: 0.0674
+
+== Analisando Arquivo: Scrapegraph-ai\examples\document_scraper_graph\openai\document_scraper_openai.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1178)
+    - Layered / MVC: 0.0304
+    - Microservices: 0.0996
+    - Monolithic: 0.1083
+
+== Analisando Arquivo: Scrapegraph-ai\examples\extras\authenticated_playwright.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0664)
+    - Layered / MVC: -0.0259
+    - Microservices: 0.0625
+    - Monolithic: 0.0178
+
+== Analisando Arquivo: Scrapegraph-ai\examples\extras\browser_base_integration.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1833)
+    - Layered / MVC: 0.0075
+    - Microservices: 0.1266
+    - Monolithic: 0.0621
+
+== Analisando Arquivo: Scrapegraph-ai\examples\extras\chromium_selenium.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\examples\extras\chromium_selenium.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\examples\extras\conditional_usage.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.2049)
+    - Layered / MVC: 0.0289
+    - Microservices: 0.1569
+    - Monolithic: 0.1196
+
+== Analisando Arquivo: Scrapegraph-ai\examples\extras\cond_smartscraper_usage.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1909)
+    - Layered / MVC: -0.0165
+    - Microservices: 0.0978
+    - Monolithic: 0.1052
+
+== Analisando Arquivo: Scrapegraph-ai\examples\extras\custom_prompt.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.2041)
+    - Layered / MVC: -0.0059
+    - Microservices: 0.1144
+    - Monolithic: 0.0617
+
+== Analisando Arquivo: Scrapegraph-ai\examples\extras\force_mode.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1724)
+    - Layered / MVC: 0.0096
+    - Microservices: 0.1153
+    - Monolithic: 0.0848
+
+== Analisando Arquivo: Scrapegraph-ai\examples\extras\html_mode.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1989)
+    - Layered / MVC: 0.0009
+    - Microservices: 0.1101
+    - Monolithic: 0.0616
+
+== Analisando Arquivo: Scrapegraph-ai\examples\extras\load_yml.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.2228)
+    - Layered / MVC: -0.0195
+    - Microservices: 0.0726
+    - Monolithic: 0.0352
+
+== Analisando Arquivo: Scrapegraph-ai\examples\extras\no_cut.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1843)
+    - Layered / MVC: -0.0119
+    - Microservices: 0.1052
+    - Monolithic: 0.0488
+
+== Analisando Arquivo: Scrapegraph-ai\examples\extras\proxy_rotation.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1841)
+    - Layered / MVC: -0.0218
+    - Microservices: 0.0943
+    - Monolithic: 0.0455
+
+== Analisando Arquivo: Scrapegraph-ai\examples\extras\rag_caching.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.2239)
+    - Layered / MVC: -0.0119
+    - Microservices: 0.1270
+    - Monolithic: 0.0619
+
+== Analisando Arquivo: Scrapegraph-ai\examples\extras\reasoning.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.2132)
+    - Layered / MVC: 0.0003
+    - Microservices: 0.1202
+    - Monolithic: 0.0670
+
+== Analisando Arquivo: Scrapegraph-ai\examples\extras\scrape_do.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.2069)
+    - Layered / MVC: -0.0033
+    - Microservices: 0.1348
+    - Monolithic: 0.0718
+
+== Analisando Arquivo: Scrapegraph-ai\examples\extras\screenshot_scaping.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0576)
+    - Layered / MVC: -0.0203
+    - Microservices: 0.0448
+    - Monolithic: 0.0043
+
+== Analisando Arquivo: Scrapegraph-ai\examples\extras\serch_graph_scehma.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1471)
+    - Layered / MVC: -0.0010
+    - Microservices: 0.0900
+    - Monolithic: 0.0586
+
+== Analisando Arquivo: Scrapegraph-ai\examples\extras\slow_mo.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.2122)
+    - Layered / MVC: 0.0280
+    - Microservices: 0.0926
+    - Monolithic: 0.1171
+
+== Analisando Arquivo: Scrapegraph-ai\examples\extras\undected_playwright.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.2400)
+    - Layered / MVC: 0.0033
+    - Microservices: 0.1220
+    - Monolithic: 0.0829
+
+== Analisando Arquivo: Scrapegraph-ai\examples\json_scraper_graph\ollama\json_scraper_multi_ollama.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1321)
+    - Layered / MVC: -0.0055
+    - Microservices: 0.0575
+    - Monolithic: 0.0909
+
+== Analisando Arquivo: Scrapegraph-ai\examples\json_scraper_graph\ollama\json_scraper_ollama.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1649)
+    - Layered / MVC: -0.0076
+    - Microservices: 0.0709
+    - Monolithic: 0.0414
+
+== Analisando Arquivo: Scrapegraph-ai\examples\json_scraper_graph\openai\json_scraper_multi_openai.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1579)
+    - Layered / MVC: -0.0062
+    - Microservices: 0.1077
+    - Monolithic: 0.0841
+
+== Analisando Arquivo: Scrapegraph-ai\examples\json_scraper_graph\openai\json_scraper_openai.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1575)
+    - Layered / MVC: -0.0149
+    - Microservices: 0.0842
+    - Monolithic: 0.0264
+
+== Analisando Arquivo: Scrapegraph-ai\examples\json_scraper_graph\openai\md_scraper_openai.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1530)
+    - Layered / MVC: 0.0051
+    - Microservices: 0.0769
+    - Monolithic: 0.0221
+
+== Analisando Arquivo: Scrapegraph-ai\examples\json_scraper_graph\openai\omni_scraper_openai.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1768)
+    - Layered / MVC: 0.0227
+    - Microservices: 0.1008
+    - Monolithic: 0.0809
+
+== Analisando Arquivo: Scrapegraph-ai\examples\markdownify\markdownify_scrapegraphai.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0971)
+    - Layered / MVC: -0.0273
+    - Microservices: 0.0631
+    - Monolithic: -0.0251
+
+== Analisando Arquivo: Scrapegraph-ai\examples\omni_scraper_graph\omni_search_openai.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1549)
+    - Layered / MVC: 0.0248
+    - Microservices: 0.0893
+    - Monolithic: 0.1038
+
+== Analisando Arquivo: Scrapegraph-ai\examples\script_generator_graph\ollama\script_generator_ollama.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.2073)
+    - Layered / MVC: 0.0153
+    - Microservices: 0.0908
+    - Monolithic: 0.0880
+
+== Analisando Arquivo: Scrapegraph-ai\examples\script_generator_graph\ollama\script_multi_generator_ollama.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1908)
+    - Layered / MVC: 0.0314
+    - Microservices: 0.1130
+    - Monolithic: 0.0840
+
+== Analisando Arquivo: Scrapegraph-ai\examples\script_generator_graph\openai\script_generator_multi_openai.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.2121)
+    - Layered / MVC: 0.0325
+    - Microservices: 0.1448
+    - Monolithic: 0.0762
+
+== Analisando Arquivo: Scrapegraph-ai\examples\script_generator_graph\openai\script_generator_openai.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.2036)
+    - Layered / MVC: -0.0085
+    - Microservices: 0.1153
+    - Monolithic: 0.0687
+
+== Analisando Arquivo: Scrapegraph-ai\examples\script_generator_graph\openai\script_generator_schema_openai.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1672)
+    - Layered / MVC: -0.0087
+    - Microservices: 0.0795
+    - Monolithic: 0.0423
+
+== Analisando Arquivo: Scrapegraph-ai\examples\search_graph\ollama\search_graph_ollama.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1333)
+    - Layered / MVC: 0.0050
+    - Microservices: 0.0571
+    - Monolithic: 0.0741
+
+== Analisando Arquivo: Scrapegraph-ai\examples\search_graph\ollama\search_graph_schema_ollama.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0924)
+    - Layered / MVC: 0.0067
+    - Microservices: 0.0311
+    - Monolithic: 0.0439
+
+== Analisando Arquivo: Scrapegraph-ai\examples\search_graph\openai\search_graph_openai.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1430)
+    - Layered / MVC: -0.0011
+    - Microservices: 0.0883
+    - Monolithic: 0.0661
+
+== Analisando Arquivo: Scrapegraph-ai\examples\search_graph\openai\search_graph_schema_openai.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1174)
+    - Layered / MVC: -0.0066
+    - Microservices: 0.0548
+    - Monolithic: 0.0344
+
+== Analisando Arquivo: Scrapegraph-ai\examples\search_graph\openai\search_link_graph_openai.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.2045)
+    - Layered / MVC: 0.0140
+    - Microservices: 0.1432
+    - Monolithic: 0.0842
+
+== Analisando Arquivo: Scrapegraph-ai\examples\search_graph\scrapegraphai\searchscraper_scrapegraphai.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0143)
+    - Layered / MVC: -0.0880
+    - Microservices: -0.0014
+    - Monolithic: -0.0527
+
+== Analisando Arquivo: Scrapegraph-ai\examples\smart_scraper_graph\ollama\smart_scraper_lite_ollama.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1928)
+    - Layered / MVC: 0.0376
+    - Microservices: 0.1082
+    - Monolithic: 0.1142
+
+== Analisando Arquivo: Scrapegraph-ai\examples\smart_scraper_graph\ollama\smart_scraper_multi_concat_ollama.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1981)
+    - Layered / MVC: 0.0299
+    - Microservices: 0.1276
+    - Monolithic: 0.1138
+
+== Analisando Arquivo: Scrapegraph-ai\examples\smart_scraper_graph\ollama\smart_scraper_multi_lite_ollama.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.2238)
+    - Layered / MVC: 0.0401
+    - Microservices: 0.1296
+    - Monolithic: 0.1322
+
+== Analisando Arquivo: Scrapegraph-ai\examples\smart_scraper_graph\ollama\smart_scraper_multi_ollama.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1571)
+    - Layered / MVC: 0.0167
+    - Microservices: 0.0938
+    - Monolithic: 0.0945
+
+== Analisando Arquivo: Scrapegraph-ai\examples\smart_scraper_graph\ollama\smart_scraper_ollama.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.2328)
+    - Layered / MVC: 0.0301
+    - Microservices: 0.0977
+    - Monolithic: 0.0943
+
+== Analisando Arquivo: Scrapegraph-ai\examples\smart_scraper_graph\ollama\smart_scraper_schema_ollama.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1818)
+    - Layered / MVC: -0.0086
+    - Microservices: 0.0582
+    - Monolithic: 0.0637
+
+== Analisando Arquivo: Scrapegraph-ai\examples\smart_scraper_graph\openai\smart_scraper_lite_openai.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.2229)
+    - Layered / MVC: 0.0358
+    - Microservices: 0.1368
+    - Monolithic: 0.1136
+
+== Analisando Arquivo: Scrapegraph-ai\examples\smart_scraper_graph\openai\smart_scraper_multi_concat_openai.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1784)
+    - Layered / MVC: 0.0122
+    - Microservices: 0.1367
+    - Monolithic: 0.0825
+
+== Analisando Arquivo: Scrapegraph-ai\examples\smart_scraper_graph\openai\smart_scraper_multi_lite_openai.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.2133)
+    - Layered / MVC: 0.0281
+    - Microservices: 0.1451
+    - Monolithic: 0.1105
+
+== Analisando Arquivo: Scrapegraph-ai\examples\smart_scraper_graph\openai\smart_scraper_multi_openai.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.2001)
+    - Layered / MVC: 0.0214
+    - Microservices: 0.1496
+    - Monolithic: 0.0924
+
+== Analisando Arquivo: Scrapegraph-ai\examples\smart_scraper_graph\openai\smart_scraper_openai.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.2300)
+    - Layered / MVC: -0.0062
+    - Microservices: 0.1142
+    - Monolithic: 0.0699
+
+== Analisando Arquivo: Scrapegraph-ai\examples\smart_scraper_graph\openai\smart_scraper_schema_openai.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1287)
+    - Layered / MVC: -0.0230
+    - Microservices: 0.0630
+    - Monolithic: 0.0315
+
+== Analisando Arquivo: Scrapegraph-ai\examples\smart_scraper_graph\scrapegraphai\smartscraper_scrapegraphai.py ==
+Padrão Inferido: Microservices (Similaridade: 0.1289)
+    - Pipe and Filter: 0.0960
+    - Layered / MVC: -0.0393
+    - Monolithic: 0.0151
+
+== Analisando Arquivo: Scrapegraph-ai\examples\speech_graph\speech_graph_openai.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.2194)
+    - Layered / MVC: 0.0039
+    - Microservices: 0.1240
+    - Monolithic: 0.0731
+
+== Analisando Arquivo: Scrapegraph-ai\examples\xml_scraper_graph\ollama\xml_scraper_graph_multi_ollama.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1521)
+    - Layered / MVC: -0.0110
+    - Microservices: 0.0675
+    - Monolithic: 0.0265
+
+== Analisando Arquivo: Scrapegraph-ai\examples\xml_scraper_graph\ollama\xml_scraper_ollama.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1457)
+    - Layered / MVC: -0.0112
+    - Microservices: 0.0717
+    - Monolithic: 0.0204
+
+== Analisando Arquivo: Scrapegraph-ai\examples\xml_scraper_graph\openai\xml_scraper_graph_multi_openai.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1474)
+    - Layered / MVC: -0.0151
+    - Microservices: 0.0913
+    - Monolithic: 0.0212
+
+== Analisando Arquivo: Scrapegraph-ai\examples\xml_scraper_graph\openai\xml_scraper_openai.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1708)
+    - Layered / MVC: -0.0223
+    - Microservices: 0.0825
+    - Monolithic: 0.0171
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\builders\graph_builder.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\scrapegraphai\builders\graph_builder.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\docloaders\browser_base.py ==
+Padrão Inferido: Microservices (Similaridade: 0.0100)
+    - Pipe and Filter: 0.0009
+    - Layered / MVC: -0.0539
+    - Monolithic: -0.0054
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\docloaders\chromium.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\scrapegraphai\docloaders\chromium.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\docloaders\scrape_do.py ==
+Padrão Inferido: Microservices (Similaridade: 0.1652)
+    - Pipe and Filter: 0.0524
+    - Layered / MVC: -0.0417
+    - Monolithic: 0.0058
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\abstract_graph.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\scrapegraphai\graphs\abstract_graph.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\base_graph.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\scrapegraphai\graphs\base_graph.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\code_generator_graph.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\scrapegraphai\graphs\code_generator_graph.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\csv_scraper_graph.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0652)
+    - Layered / MVC: -0.1018
+    - Microservices: -0.0150
+    - Monolithic: -0.0571
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\csv_scraper_multi_graph.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0531)
+    - Layered / MVC: -0.0874
+    - Microservices: -0.0064
+    - Monolithic: -0.0288
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\depth_search_graph.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\scrapegraphai\graphs\depth_search_graph.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\document_scraper_graph.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0584)
+    - Layered / MVC: -0.0723
+    - Microservices: -0.0052
+    - Monolithic: -0.0242
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\document_scraper_multi_graph.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0449)
+    - Layered / MVC: -0.0737
+    - Microservices: -0.0054
+    - Monolithic: -0.0246
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\json_scraper_graph.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0657)
+    - Layered / MVC: -0.0877
+    - Microservices: -0.0045
+    - Monolithic: -0.0297
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\json_scraper_multi_graph.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0545)
+    - Layered / MVC: -0.0821
+    - Microservices: 0.0011
+    - Monolithic: -0.0198
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\markdownify_graph.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0619)
+    - Layered / MVC: -0.0822
+    - Microservices: -0.0192
+    - Monolithic: -0.0227
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\omni_scraper_graph.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\scrapegraphai\graphs\omni_scraper_graph.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\omni_search_graph.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0460)
+    - Layered / MVC: -0.0591
+    - Microservices: 0.0045
+    - Monolithic: -0.0026
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\screenshot_scraper_graph.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0589)
+    - Layered / MVC: -0.0923
+    - Microservices: -0.0123
+    - Monolithic: -0.0669
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\script_creator_graph.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\scrapegraphai\graphs\script_creator_graph.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\script_creator_multi_graph.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0566)
+    - Layered / MVC: -0.0747
+    - Microservices: 0.0014
+    - Monolithic: -0.0212
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\search_graph.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\scrapegraphai\graphs\search_graph.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\search_link_graph.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0527)
+    - Layered / MVC: -0.0727
+    - Microservices: -0.0021
+    - Monolithic: -0.0108
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\smart_scraper_graph.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\scrapegraphai\graphs\smart_scraper_graph.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\smart_scraper_lite_graph.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0652)
+    - Layered / MVC: -0.0786
+    - Microservices: 0.0014
+    - Monolithic: -0.0267
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\smart_scraper_multi_concat_graph.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\scrapegraphai\graphs\smart_scraper_multi_concat_graph.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\smart_scraper_multi_graph.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0392)
+    - Layered / MVC: -0.0792
+    - Microservices: -0.0068
+    - Monolithic: -0.0102
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\smart_scraper_multi_lite_graph.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0487)
+    - Layered / MVC: -0.0766
+    - Microservices: -0.0072
+    - Monolithic: -0.0090
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\speech_graph.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\scrapegraphai\graphs\speech_graph.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\xml_scraper_graph.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0582)
+    - Layered / MVC: -0.0841
+    - Microservices: -0.0092
+    - Monolithic: -0.0364
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\xml_scraper_multi_graph.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0511)
+    - Layered / MVC: -0.0834
+    - Microservices: -0.0009
+    - Monolithic: -0.0255
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\helpers\default_filters.py ==
+Padrão Inferido: Microservices (Similaridade: 0.1355)
+    - Pipe and Filter: 0.0603
+    - Layered / MVC: 0.0716
+    - Monolithic: 0.0773
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\helpers\models_tokens.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\scrapegraphai\helpers\models_tokens.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\helpers\nodes_metadata.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0838)
+    - Layered / MVC: -0.0556
+    - Microservices: 0.0268
+    - Monolithic: 0.0070
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\helpers\robots.py ==
+Padrão Inferido: Microservices (Similaridade: 0.2152)
+    - Pipe and Filter: 0.1797
+    - Layered / MVC: 0.1609
+    - Monolithic: 0.2051
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\helpers\schemas.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1700)
+    - Layered / MVC: -0.0425
+    - Microservices: 0.0683
+    - Monolithic: 0.0432
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\integrations\burr_bridge.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\scrapegraphai\integrations\burr_bridge.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\integrations\indexify_node.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0959)
+    - Layered / MVC: -0.0534
+    - Microservices: -0.0178
+    - Monolithic: -0.0306
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\models\clod.py ==
+Padrão Inferido: Microservices (Similaridade: 0.1529)
+    - Pipe and Filter: 0.0549
+    - Layered / MVC: 0.1359
+    - Monolithic: 0.1352
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\models\deepseek.py ==
+Padrão Inferido: Microservices (Similaridade: 0.1711)
+    - Pipe and Filter: 0.0514
+    - Layered / MVC: 0.0997
+    - Monolithic: 0.1455
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\models\oneapi.py ==
+Padrão Inferido: Monolithic (Similaridade: 0.1523)
+    - Pipe and Filter: 0.0046
+    - Layered / MVC: 0.1123
+    - Microservices: 0.1472
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\models\openai_itt.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0380)
+    - Layered / MVC: 0.0042
+    - Microservices: 0.0333
+    - Monolithic: -0.0042
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\models\openai_tts.py ==
+Padrão Inferido: Microservices (Similaridade: 0.0948)
+    - Pipe and Filter: 0.0900
+    - Layered / MVC: 0.0027
+    - Monolithic: 0.0174
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\models\xai.py ==
+Padrão Inferido: Microservices (Similaridade: 0.1472)
+    - Pipe and Filter: 0.0470
+    - Layered / MVC: 0.1063
+    - Monolithic: 0.1282
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\base_node.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\scrapegraphai\nodes\base_node.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\concat_answers_node.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0303)
+    - Layered / MVC: -0.1249
+    - Microservices: -0.0545
+    - Monolithic: -0.0225
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\conditional_node.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0161)
+    - Layered / MVC: -0.1219
+    - Microservices: -0.0235
+    - Monolithic: -0.0487
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\description_node.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0698)
+    - Layered / MVC: -0.0555
+    - Microservices: -0.0150
+    - Monolithic: 0.0097
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\fetch_node.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\scrapegraphai\nodes\fetch_node.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\fetch_node_level_k.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\scrapegraphai\nodes\fetch_node_level_k.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\fetch_screen_node.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0768)
+    - Layered / MVC: -0.0366
+    - Microservices: 0.0300
+    - Monolithic: -0.0525
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\generate_answer_csv_node.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\scrapegraphai\nodes\generate_answer_csv_node.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\generate_answer_from_image_node.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0522)
+    - Layered / MVC: -0.0587
+    - Microservices: 0.0335
+    - Monolithic: -0.0094
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\generate_answer_node.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\scrapegraphai\nodes\generate_answer_node.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\generate_answer_node_k_level.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\scrapegraphai\nodes\generate_answer_node_k_level.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\generate_answer_omni_node.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\scrapegraphai\nodes\generate_answer_omni_node.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\generate_code_node.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\scrapegraphai\nodes\generate_code_node.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\generate_scraper_node.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\scrapegraphai\nodes\generate_scraper_node.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\get_probable_tags_node.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0507)
+    - Layered / MVC: -0.0576
+    - Microservices: -0.0211
+    - Monolithic: -0.0005
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\graph_iterator_node.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\scrapegraphai\nodes\graph_iterator_node.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\html_analyzer_node.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0517)
+    - Layered / MVC: -0.0566
+    - Microservices: -0.0037
+    - Monolithic: 0.0037
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\image_to_text_node.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0346)
+    - Layered / MVC: -0.0672
+    - Microservices: -0.0214
+    - Monolithic: -0.0350
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\markdownify_node.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0437)
+    - Layered / MVC: -0.0826
+    - Microservices: -0.0525
+    - Monolithic: -0.0372
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\merge_answers_node.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\scrapegraphai\nodes\merge_answers_node.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\merge_generated_scripts_node.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0521)
+    - Layered / MVC: -0.1058
+    - Microservices: -0.0484
+    - Monolithic: -0.0181
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\parse_node.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\scrapegraphai\nodes\parse_node.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\parse_node_depth_k_node.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0428)
+    - Layered / MVC: -0.0807
+    - Microservices: -0.0384
+    - Monolithic: -0.0207
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\prompt_refiner_node.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0596)
+    - Layered / MVC: -0.0522
+    - Microservices: 0.0045
+    - Monolithic: -0.0017
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\rag_node.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0502)
+    - Layered / MVC: -0.0213
+    - Microservices: 0.0402
+    - Monolithic: 0.0334
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\reasoning_node.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0545)
+    - Layered / MVC: -0.0538
+    - Microservices: -0.0074
+    - Monolithic: -0.0007
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\robots_node.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\scrapegraphai\nodes\robots_node.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\search_internet_node.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\scrapegraphai\nodes\search_internet_node.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\search_link_node.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\scrapegraphai\nodes\search_link_node.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\search_node_with_context.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0424)
+    - Layered / MVC: -0.0822
+    - Microservices: -0.0042
+    - Monolithic: -0.0162
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\text_to_speech_node.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0760)
+    - Layered / MVC: -0.0963
+    - Microservices: -0.0149
+    - Monolithic: -0.0298
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\prompts\description_node_prompts.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.2412)
+    - Layered / MVC: 0.0730
+    - Microservices: 0.1066
+    - Monolithic: 0.1337
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\prompts\generate_answer_node_csv_prompts.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0853)
+    - Layered / MVC: -0.0510
+    - Microservices: 0.0147
+    - Monolithic: -0.0025
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\prompts\generate_answer_node_omni_prompts.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0705)
+    - Layered / MVC: -0.0286
+    - Microservices: 0.0279
+    - Monolithic: 0.0124
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\prompts\generate_answer_node_pdf_prompts.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0713)
+    - Layered / MVC: -0.0546
+    - Microservices: 0.0224
+    - Monolithic: -0.0100
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\prompts\generate_answer_node_prompts.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\scrapegraphai\prompts\generate_answer_node_prompts.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\prompts\generate_code_node_prompts.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\scrapegraphai\prompts\generate_code_node_prompts.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\prompts\get_probable_tags_node_prompts.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1669)
+    - Layered / MVC: 0.0418
+    - Microservices: 0.1268
+    - Monolithic: 0.0909
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\prompts\html_analyzer_node_prompts.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0535)
+    - Layered / MVC: -0.0122
+    - Microservices: 0.0244
+    - Monolithic: 0.0362
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\prompts\merge_answer_node_prompts.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1706)
+    - Layered / MVC: -0.0119
+    - Microservices: 0.0913
+    - Monolithic: 0.0743
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\prompts\merge_generated_scripts_prompts.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1449)
+    - Layered / MVC: -0.0386
+    - Microservices: 0.0650
+    - Monolithic: 0.0629
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\prompts\prompt_refiner_node_prompts.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0893)
+    - Layered / MVC: 0.0040
+    - Microservices: 0.0433
+    - Monolithic: 0.0288
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\prompts\reasoning_node_prompts.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0350)
+    - Layered / MVC: -0.0030
+    - Microservices: 0.0196
+    - Monolithic: 0.0149
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\prompts\robots_node_prompts.py ==
+Padrão Inferido: Microservices (Similaridade: 0.1192)
+    - Pipe and Filter: 0.1088
+    - Layered / MVC: -0.0389
+    - Monolithic: -0.0107
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\prompts\search_internet_node_prompts.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1305)
+    - Layered / MVC: -0.0236
+    - Microservices: 0.0790
+    - Monolithic: 0.0287
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\prompts\search_link_node_prompts.py ==
+Padrão Inferido: Monolithic (Similaridade: 0.1177)
+    - Pipe and Filter: 0.0991
+    - Layered / MVC: 0.0245
+    - Microservices: 0.1154
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\prompts\search_node_with_context_prompts.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1398)
+    - Layered / MVC: 0.0283
+    - Microservices: 0.1132
+    - Monolithic: 0.0570
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\telemetry\telemetry.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\scrapegraphai\telemetry\telemetry.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\utils\cleanup_code.py ==
+Padrão Inferido: Monolithic (Similaridade: 0.1089)
+    - Pipe and Filter: 0.0950
+    - Layered / MVC: -0.0132
+    - Microservices: 0.0746
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\utils\cleanup_html.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\scrapegraphai\utils\cleanup_html.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\utils\code_error_analysis.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\scrapegraphai\utils\code_error_analysis.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\utils\code_error_correction.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\scrapegraphai\utils\code_error_correction.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\utils\convert_to_md.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0534)
+    - Layered / MVC: -0.0019
+    - Microservices: 0.0286
+    - Monolithic: 0.0109
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\utils\copy.py ==
+Padrão Inferido: Microservices (Similaridade: -0.0387)
+    - Pipe and Filter: -0.0581
+    - Layered / MVC: -0.1247
+    - Monolithic: -0.0503
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\utils\custom_callback.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\scrapegraphai\utils\custom_callback.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\utils\data_export.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0754)
+    - Layered / MVC: -0.0508
+    - Microservices: -0.0060
+    - Monolithic: -0.0446
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\utils\dict_content_compare.py ==
+Padrão Inferido: Monolithic (Similaridade: -0.0399)
+    - Pipe and Filter: -0.0714
+    - Layered / MVC: -0.0711
+    - Microservices: -0.0801
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\utils\llm_callback_manager.py ==
+Padrão Inferido: Monolithic (Similaridade: 0.0643)
+    - Pipe and Filter: -0.0496
+    - Layered / MVC: 0.0129
+    - Microservices: 0.0114
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\utils\logging.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\scrapegraphai\utils\logging.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\utils\model_costs.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\scrapegraphai\utils\model_costs.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\utils\output_parser.py ==
+Padrão Inferido: Microservices (Similaridade: -0.0074)
+    - Pipe and Filter: -0.0147
+    - Layered / MVC: -0.0320
+    - Monolithic: -0.0129
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\utils\parse_state_keys.py ==
+Padrão Inferido: Monolithic (Similaridade: 0.0166)
+    - Pipe and Filter: 0.0052
+    - Layered / MVC: -0.0431
+    - Microservices: 0.0098
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\utils\prettify_exec_info.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0962)
+    - Layered / MVC: -0.0952
+    - Microservices: -0.0559
+    - Monolithic: 0.0118
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\utils\proxy_rotation.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\scrapegraphai\utils\proxy_rotation.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\utils\research_web.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\scrapegraphai\utils\research_web.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\utils\save_audio_from_bytes.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0708)
+    - Layered / MVC: -0.0400
+    - Microservices: 0.0425
+    - Monolithic: -0.0586
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\utils\save_code_to_file.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0976)
+    - Layered / MVC: 0.0408
+    - Microservices: 0.0819
+    - Monolithic: 0.0319
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\utils\schema_trasform.py ==
+Padrão Inferido: Monolithic (Similaridade: 0.1450)
+    - Pipe and Filter: 0.1374
+    - Layered / MVC: 0.0785
+    - Microservices: 0.0685
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\utils\split_text_into_chunks.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1201)
+    - Layered / MVC: -0.0372
+    - Microservices: 0.0021
+    - Monolithic: 0.0497
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\utils\sys_dynamic_import.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0141)
+    - Layered / MVC: -0.0712
+    - Microservices: 0.0102
+    - Monolithic: -0.0079
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\utils\tokenizer.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.2750)
+    - Layered / MVC: 0.1511
+    - Microservices: 0.1694
+    - Monolithic: 0.2000
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\utils\screenshot_scraping\screenshot_preparation.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\scrapegraphai\utils\screenshot_scraping\screenshot_preparation.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\utils\screenshot_scraping\text_detection.py ==
+Padrão Inferido: Microservices (Similaridade: 0.1264)
+    - Pipe and Filter: 0.1165
+    - Layered / MVC: 0.0324
+    - Monolithic: 0.0291
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\utils\tokenizers\tokenizer_mistral.py ==
+Padrão Inferido: Layered / MVC (Similaridade: 0.1004)
+    - Pipe and Filter: 0.0387
+    - Microservices: 0.0338
+    - Monolithic: 0.0751
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\utils\tokenizers\tokenizer_ollama.py ==
+Padrão Inferido: Layered / MVC (Similaridade: 0.1219)
+    - Pipe and Filter: 0.0384
+    - Microservices: 0.0035
+    - Monolithic: 0.1195
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\utils\tokenizers\tokenizer_openai.py ==
+Padrão Inferido: Layered / MVC (Similaridade: 0.1354)
+    - Pipe and Filter: 0.1340
+    - Microservices: 0.0985
+    - Monolithic: 0.0962
+
+== Analisando Arquivo: Scrapegraph-ai\tests\test_chromium.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\tests\test_chromium.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\tests\test_cleanup_html.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\tests\test_cleanup_html.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\tests\test_csv_scraper_multi_graph.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\tests\test_csv_scraper_multi_graph.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\tests\test_depth_search_graph.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1495)
+    - Layered / MVC: 0.0381
+    - Microservices: 0.1204
+    - Monolithic: 0.0644
+
+== Analisando Arquivo: Scrapegraph-ai\tests\test_fetch_node_timeout.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\tests\test_fetch_node_timeout.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\tests\test_generate_answer_node.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\tests\test_generate_answer_node.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\tests\test_json_scraper_graph.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\tests\test_json_scraper_graph.py: index out of range in self
+
+-- Ignorando (muito pequeno): Scrapegraph-ai\tests\test_json_scraper_multi_graph.py
+
+== Analisando Arquivo: Scrapegraph-ai\tests\test_models_tokens.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\tests\test_models_tokens.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\tests\test_omni_search_graph.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\tests\test_omni_search_graph.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\tests\test_scrape_do.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\tests\test_scrape_do.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\tests\test_script_creator_multi_graph.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\tests\test_script_creator_multi_graph.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\tests\test_search_graph.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\tests\test_search_graph.py: index out of range in self
+
+-- Ignorando (muito pequeno): Scrapegraph-ai\tests\test_smart_scraper_multi_concat_graph.py
+
+== Analisando Arquivo: Scrapegraph-ai\tests\graphs\abstract_graph_test.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\tests\graphs\abstract_graph_test.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\tests\graphs\code_generator_graph_openai_test.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0847)
+    - Layered / MVC: -0.0389
+    - Microservices: 0.0417
+    - Monolithic: 0.0197
+
+== Analisando Arquivo: Scrapegraph-ai\tests\graphs\depth_search_graph_openai_test.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1705)
+    - Layered / MVC: -0.0356
+    - Microservices: 0.1130
+    - Monolithic: 0.0704
+
+== Analisando Arquivo: Scrapegraph-ai\tests\graphs\scrape_graph_test.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.2445)
+    - Layered / MVC: -0.0029
+    - Microservices: 0.1315
+    - Monolithic: 0.0880
+
+== Analisando Arquivo: Scrapegraph-ai\tests\graphs\scrape_plain_text_mistral_test.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1475)
+    - Layered / MVC: -0.0480
+    - Microservices: 0.0361
+    - Monolithic: 0.0562
+
+== Analisando Arquivo: Scrapegraph-ai\tests\graphs\scrape_xml_ollama_test.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1706)
+    - Layered / MVC: -0.0177
+    - Microservices: 0.0788
+    - Monolithic: 0.0361
+
+== Analisando Arquivo: Scrapegraph-ai\tests\graphs\screenshot_scraper_test.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1808)
+    - Layered / MVC: 0.0054
+    - Microservices: 0.1088
+    - Monolithic: 0.0654
+
+== Analisando Arquivo: Scrapegraph-ai\tests\graphs\script_generator_test.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1852)
+    - Layered / MVC: 0.0095
+    - Microservices: 0.1395
+    - Monolithic: 0.1135
+
+== Analisando Arquivo: Scrapegraph-ai\tests\graphs\search_graph_openai_test.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1286)
+    - Layered / MVC: -0.0193
+    - Microservices: 0.0868
+    - Monolithic: 0.0848
+
+== Analisando Arquivo: Scrapegraph-ai\tests\graphs\search_link_ollama.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.2080)
+    - Layered / MVC: 0.0563
+    - Microservices: 0.1353
+    - Monolithic: 0.1390
+
+== Analisando Arquivo: Scrapegraph-ai\tests\graphs\smart_scraper_clod_test.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.2221)
+    - Layered / MVC: -0.0039
+    - Microservices: 0.1314
+    - Monolithic: 0.0829
+
+== Analisando Arquivo: Scrapegraph-ai\tests\graphs\smart_scraper_ernie_test.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1937)
+    - Layered / MVC: -0.0415
+    - Microservices: 0.1040
+    - Monolithic: 0.0632
+
+== Analisando Arquivo: Scrapegraph-ai\tests\graphs\smart_scraper_fireworks_test.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.2122)
+    - Layered / MVC: -0.0066
+    - Microservices: 0.1265
+    - Monolithic: 0.1011
+
+== Analisando Arquivo: Scrapegraph-ai\tests\graphs\smart_scraper_multi_lite_graph_openai_test.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1951)
+    - Layered / MVC: 0.0139
+    - Microservices: 0.1554
+    - Monolithic: 0.1061
+
+== Analisando Arquivo: Scrapegraph-ai\tests\graphs\smart_scraper_ollama_test.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1971)
+    - Layered / MVC: -0.0297
+    - Microservices: 0.1003
+    - Monolithic: 0.0621
+
+== Analisando Arquivo: Scrapegraph-ai\tests\graphs\smart_scraper_openai_test.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.1188)
+    - Layered / MVC: -0.0417
+    - Microservices: 0.0653
+    - Monolithic: 0.0214
+
+== Analisando Arquivo: Scrapegraph-ai\tests\graphs\xml_scraper_openai_test.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0708)
+    - Layered / MVC: -0.0470
+    - Microservices: 0.0443
+    - Monolithic: -0.0097
+
+== Analisando Arquivo: Scrapegraph-ai\tests\nodes\fetch_node_test.py ==
+Padrão Inferido: Microservices (Similaridade: 0.0675)
+    - Pipe and Filter: 0.0644
+    - Layered / MVC: -0.0103
+    - Monolithic: 0.0090
+
+== Analisando Arquivo: Scrapegraph-ai\tests\nodes\robot_node_test.py ==
+Padrão Inferido: Microservices (Similaridade: 0.0576)
+    - Pipe and Filter: 0.0040
+    - Layered / MVC: -0.0396
+    - Monolithic: 0.0289
+
+== Analisando Arquivo: Scrapegraph-ai\tests\nodes\search_internet_node_test.py ==
+Padrão Inferido: Microservices (Similaridade: 0.0725)
+    - Pipe and Filter: 0.0665
+    - Layered / MVC: 0.0024
+    - Monolithic: 0.0716
+
+== Analisando Arquivo: Scrapegraph-ai\tests\nodes\search_link_node_test.py ==
+Padrão Inferido: Monolithic (Similaridade: 0.0512)
+    - Pipe and Filter: 0.0410
+    - Layered / MVC: -0.0213
+    - Microservices: 0.0367
+
+== Analisando Arquivo: Scrapegraph-ai\tests\utils\convert_to_md_test.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0875)
+    - Layered / MVC: 0.0308
+    - Microservices: 0.0376
+    - Monolithic: 0.0750
+
+== Analisando Arquivo: Scrapegraph-ai\tests\utils\copy_utils_test.py ==
+!! Erro ao ler ou processar Scrapegraph-ai\tests\utils\copy_utils_test.py: index out of range in self
+
+== Analisando Arquivo: Scrapegraph-ai\tests\utils\parse_state_keys_test.py ==
+Padrão Inferido: Pipe and Filter (Similaridade: 0.0660)
+    - Layered / MVC: -0.0144
+    - Microservices: 0.0366
+    - Monolithic: 0.0522
+
+== Analisando Arquivo: Scrapegraph-ai\tests\utils\research_web_test.py ==
+Padrão Inferido: Monolithic (Similaridade: 0.1244)
+    - Pipe and Filter: 0.0048
+    - Layered / MVC: 0.0108
+    - Microservices: 0.0950
+
+== Analisando Arquivo: Scrapegraph-ai\tests\utils\test_proxy_rotation.py ==
+Padrão Inferido: Microservices (Similaridade: 0.1059)
+    - Pipe and Filter: 0.0177
+    - Layered / MVC: -0.0126
+    - Monolithic: 0.0117
+
+== Analisando Arquivo: Scrapegraph-ai\tests\utils\test_sys_dynamic_import.py ==
+Padrão Inferido: Microservices (Similaridade: 0.0683)
+    - Pipe and Filter: 0.0422
+    - Layered / MVC: -0.0196
+    - Monolithic: 0.0105
+
+
+### === RESUMO GERAL DA ANÁLISE DE CÓDIGO === ###
+Contagem de padrões inferidos (com maior similaridade) nos arquivos .py analisados:
+- Pipe and Filter: 138 arquivo(s)
+- Microservices: 20 arquivo(s)
+- Monolithic: 10 arquivo(s)
+- Layered / MVC: 3 arquivo(s)
+
+Análise concluída.
