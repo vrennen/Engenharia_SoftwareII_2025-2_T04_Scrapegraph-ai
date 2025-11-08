@@ -1,2 +1,4 @@
-# -Engenharia_SoftwareII_2025-2_T04_Scrapegraph-ai
-Materiais usados para o estudo de modelo na disciplina Engenharia de Software II
+# Engenharia Software II 2025-2 T04 Scrapegraph-ai
+Scrits, documentação e tutoriais para Reconhecimento de Padrões Arquiteturais no Software Scrapegraph-ai.
+
+Repositório do Scrapegraph-ai: https://github.com/ScrapeGraphAI/Scrapegraph-ai
