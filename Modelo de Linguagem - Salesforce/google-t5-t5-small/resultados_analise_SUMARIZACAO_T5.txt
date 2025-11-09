@@ -1,0 +1,240 @@
+### INÍCIO DA ANÁLISE DE SUMARIZAÇÃO (Modelo: t5-small) ###
+Repositório: Scrapegraph-ai
+----------------------------------------
+
+
+--- Varrendo Pasta: Scrapegraph-ai\scrapegraphai\graphs ---
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\abstract_graph.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+uuid import warnings import time from abc import ABC, abstractmethod from typing import Optional, Type from langchain_core.rate_limiters import InMemoryRateLimiter from pydantic import BaseModel from ..helpers import models_tokens, CLoD, DeepSeek, OneApi, XAI from.utils.logging .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\base_graph.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+base_graph module """ import time import warnings from typing import Tuple from ..telemetry import log_graph_execution from customLLMCallbackManager .utils.logging import get_logger logger # ANSI escape sequence .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\code_generator_graph.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+the code generated is in Python and uses the library BeautifulSoup . it requires a user prompt, a source URL, and an output schema . schema (baseModel): The schema for the graph output .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\csv_scraper_graph.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+""" is a class representing a graph for extracting information from CSV files . the method fetches chunks of text or speech, generates an answer based on these chunks .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\csv_scraper_multi_graph.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+CSVScraperMultiGraph is a scraping pipeline that scrapes a list of URLs and generates answers to a given prompt . a flag to run the browser in headless mode. verbose (bool): A flag to display the execution information .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\depth_search_graph.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+the code generated is in Python and uses the library BeautifulSoup . it requires a user prompt, a source URL, and an output schema .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\document_scraper_graph.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+document scraper Graph is a scraping pipeline that automates the process of extracting information from web pages using a natural language model to interpret and answer prompts . llm_model: An instance of a language model client, configured for generating embeddings. verbose (bool): A flag indicating whether to run the graph in headless mode.
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\document_scraper_multi_graph.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+documentScraperMultiGraph is a scraping pipeline that scrapes a list of URLs and generates answers to a given prompt . llm_model (dict): The configuration for the language model. headless (bool): A flag to run the browser in headless mode .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\json_scraper_graph.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+JSONScraperGraph defines a scraping pipeline for JSON files . llm_model: An instance of a language model client, configured for generating embeddings . verbose: flag indicating whether to show print statements during execution .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\json_scraper_multi_graph.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+json_scraperMultiGraph is a scraping pipeline that scrapes a list of URLs and generates answers to a given prompt . it only requires a user prompt and .a list . llm_model (dict): The configuration for the language model .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\markdownify_graph.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+a graph that converts HTML content to Markdown format . it takes a URL or HTML content as input and converts it to clean, readable Markdown . def execute( self, initial_state: Dict .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\omni_scraper_graph.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+OmniScraper is a scraping pipeline that automates the process of extracting information from web pages using a natural language model to interpret and answer prompts . llm_model: An instance of a language model client, configured for generating embeddings. verbose (bool): A flag indicating whether to show print statements during execution .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\omni_search_graph.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+OmniSearchGraph is a scraping pipeline that searches the internet for answers to a given prompt . it only requires a user prompt to search the internet and generate an answer . llm_model (dict): The configuration for the language model .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\screenshot_scraper_graph.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+screenshotScraperGraph Module """ from typing import Optional, Type from pydantic import BaseModel from .abstract_graph import BaseGraph class screenshotscrapergraph . output text to be scraped .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\script_creator_graph.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+ScriptCreatorGraph defines a scraping pipeline for generating web scraping scripts . attributes: prompt (str): The prompt for the graph . llm_model: An instance of an embedding model client . verbose: A flag indicating whether to show print statements during execution .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\script_creator_multi_graph.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+ScriptCreatorMultiGraph is a scraping pipeline that scrapes a list of URLs generating web scraping scripts . it only requires a user prompt and a lists of URL . llm_model (dict): The configuration for the language model .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\search_graph.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+search graph is a scraping pipeline that searches the internet for answers to a given prompt . it only requires a user prompt to search the internet and generate an answer . llm_model (dict): The configuration for the language model .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\search_link_graph.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+searchLinkGraph is a scraping pipeline that automates the process of extracting information from web pages using a natural language model to interpret and answer prompts . llm_model: An instance of a language model client, configured for generating embeddings. verbose (bool): A flag indicating whether to show print statements during execution .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\smart_scraper_graph.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+smartScraper is a scraping pipeline that automates the process of extracting information from web pages using a natural language model to interpret and answer prompts . llm_model: An instance of a language model client, configured for generating embeddings. verbose (bool): A flag indicating whether to run the graph in headless mode.
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\smart_scraper_lite_graph.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+""" from typing import Optional, Type from pydantic import BaseModel from .abstract_graph import BaseGraph class SmartScraperLiteGraph . fetch_node = FetchNode .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\smart_scraper_multi_concat_graph.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+SmartScraperMultiConditionalGraph is a scraping pipeline that scrapes a list of URLs and generates answers to a given prompt . llm_model (dict): The configuration for the language model. headless (bool): A flag to run the browser in headless mode .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\smart_scraper_multi_graph.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+smartScraperMultiGraph is a scraping pipeline that scrapes a list of URLs and generates answers to a given prompt . the llm_model (dict): The configuration for the language model . libs: prompt (str): A flag to run the browser in headless mode .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\smart_scraper_multi_lite_graph.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+smartScraperMultiLiteGraph is a scraping pipeline that scrapes a list of URLs and finally generates answers to a given prompt . in this case the content is merged before to be passed to the llm .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\speech_graph.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+speech graph module """ from typing import Optional, Type from pydantic import BaseModel from ..nodes import FetchNode, GenerateAnswerNode and ParseNode . speechyGraph is a scraping pipeline that scrapes the web, provide an answer to a given prompt .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\xml_scraper_graph.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+XMLScraperGraph is a scraping pipeline that extracts information from XML files using a natural language model to interpret and answer prompts . llm_model: An instance of a language model client, configured for generating embeddings. verbose (bool): A flag indicating whether to show print statements during execution. model_token (int): The token limit for the language model.
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\graphs\xml_scraper_multi_graph.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+XMLScraperMultiGraph is a scraping pipeline that scrapes a list of URLs and generates answers to a given prompt . llm_model (dict): The configuration for the language model . headless (bool): A flag to run the browser in headless mode .
+
+
+--- Varrendo Pasta: Scrapegraph-ai\scrapegraphai\nodes ---
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\base_node.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+base class for scrapeGraphAI application defines """ node_name (str): the unique identifier name for the node . logger: The centralized root logger (logging.Logger): Node_config (Optional[dict], optional): Additional configuration for node; defaults to None .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\concat_answers_node.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+Args: state (dict): the current state of the graph . the input keys will be used to fetch the correct data from the state .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\conditional_node.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+conditional node defines the next step in the graph's execution flow . it is used to implement branching logic within the graph . the first node is chosen for execution if the key exists and has a non-empty value .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\description_node.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+DescriptionNode Module "" from typing import List, Optional from langchain .prompts import RunnableParallel from tqdm from .base_node import BaseNode class . it allows scraping of big documents without exceeding the token limit .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\fetch_node.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+json from typing import List, Optional import concurrent.futures import requests from langchain_community.document_loaders import PyPDFLoader . a node responsible for fetching the HTML content of a specified URL and updating the graph's state with this content . this node acts as a starting point in many scraping workflows .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\fetch_node_level_k.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+urllib.parse import BeautifulSoup from langchain_core.documents import Document from .docloaders import ChromiumLoader . a node responsible for fetching the HTML content of a specified URL .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\fetch_screen_node.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+fetch_screen_node module "" captures screenshots from a given URL and stores them in the state dictionary as bytes . def __init___ (self, state: dict) = None, node_name: str = "FetchScreen" self.logger.info (f"--- Executing self.nodes_name Node ---") with sync_playwright() .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\generate_answer_csv_node.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+module for generating the answer node "" from typing import List, Optional from langchain_core .prompts import JsonOutputParser . tqdm import TEMPLATE_CHUKS_CSV .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\generate_answer_from_image_node.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+import asyncio from .base_node import BaseNode class GenerateAnswerFromImageNode (BaseNode) """ analyzes images from the state dictionary using the openAI API . def __init__ .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\generate_answer_node.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+json import time from typing import List, Optional from langchain .prompts import PromptTemplate . tqdm import txdm from requests.exceptions import Timeout . node_name (str): the name of the node .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\generate_answer_node_k_level.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+a node responsible for compressing the input tokens and storing the document in a vector database for retrieval . it allows scraping of big documents without exceeding the token limit of the language model . a flag indicating whether to show print statements during execution .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\generate_answer_omni_node.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+a node that generates an answer using a large language model (LLM) it constructs a prompt from the user's input and the scraped content . it feeds it to the LLM, and parses the .lm's response to produce an answer .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\generate_code_node.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+json import sys from io import StringIO from typing import Any, Dict, List, Optional from bs4 import ValidationError from jsonschema import validate from langchain .prompts import TEMPLATE_INIT_CODE_GENERATION, extract_code, semantic_focused_code_generation .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\generate_scraper_node.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+""" generates a python script for scraping a website using the specified library . it takes the user's prompt and the scraped content as input . the script generates the script that extracts the information requested by the user .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\get_probable_tags_node.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+a node that uses a language model to identify probable HTML tags . this node generates a prompt describing the task, submits it to the language model, and processes the output to produce a list .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\graph_iterator_node.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+GraphIterator module "" is a node responsible for instantiating and running multiple graph instances in parallel . it creates as many graph instances as the number of elements in the input list . the input keys will be used to fetch the correct data from the state .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\html_analyzer_node.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+node that generates an analysis of the provided HTML code based on the wanted infromations to be extracted . node_name (str): The unique identifier name for the node, defaulting to "GenerateAnswer"
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\image_to_text_node.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+the method retrieves the image from the list of URLs provided in the state . Args: state (dict): current state of the graph . returns the extracted text .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\markdownify_node.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+markdownifyNode module "" is a node responsible for converting HTML content to Markdown format . it uses the convert_to_md utility function to perform the conversion . Args: state (dict): the current state of the graph .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\merge_answers_node.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+a node responsible for merging the answers from multiple graph instances into a single answer . node_name: the unique identifier name for the node, defaulting to "GenerateAnswer"
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\merge_generated_scripts_node.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+""" is a node responsible for merging scripts generated . node_name (str): the unique identifier name for the node . def execute(self, state: dict) -> dict: "" Executes a logic to merge the answers from multiple graph instances into a single answer .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\parse_node.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+parseNode module "" is a node responsible for parsing HTML content from a document . the parsed content is split into chunks for further processing . this node enhances the scraping workflow by allowing for targeted extraction .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\parse_node_depth_k_node.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+parseNodeDepthK module "" is a node responsible for parsing HTML content from a series of documents . this node enhances the scraping workflow by allowing for targeted extraction of content . Args: state (dict): current state of the graph .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\prompt_refiner_node.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+a node that refines the user prompt with the use of the schema and additional context . node_name (str): The unique identifier name for the node, defaulting to "GenerateAnswer" a flag indicating whether to show print statements during execution .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\rag_node.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+RAGNode module "" is a node responsible for storing the input tokens in a vector database for retrieval . it allows scraping of big documents without exceeding the token limit of the language model .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\reasoning_node.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+a node that refines the user prompt with the use of the schema and additional context . node_name (str): The unique identifier name for the node, defaulting to "GenerateAnswer" a flag indicating whether to show print statements during execution .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\robots_node.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+urllib.parsers import urlparse from langchain .prompts import CommaSeparatedListOutputParser . it uses a language model client to determine if a website is scrapeable . this node acts as a starting point in many scraping workflows .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\search_internet_node.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+a node that generates a search query based on the user's input and searches the internet for relevant information . it then uses the search query to find relevant information on the internet and updates the state with the generated answer . node_config: Additional configuration for the node, defaulting to "SearchInternet"
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\search_link_node.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+""" import re from typing import List, Optional from urllib.parse import parse_qs . promptTemplate from langchain_core.output_parsers import JsonOutputParser from tqdm from .helpers import TEMPLATE_RELEVANT_LINKS from base_node import BaseNode class SearchLinkNode(BaseNode)
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\search_node_with_context.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+""" is a node that generates a search query based on the user's input . it then uses the search query to find relevant information on the internet . node_name (str): The unique identifier name for the node .
+
+== Analisando Arquivo: Scrapegraph-ai\scrapegraphai\nodes\text_to_speech_node.py ==
+--- RESUMO GERADO (T5-SMALL) ---
+tts_model: An instance of the text-to-speech model client . verbose: flag indicating whether to show print statements during execution . node_name: the unique identifier name for the node, defaulting to "TextToSpeech"
+
+
+Análise de sumarização concluída.
