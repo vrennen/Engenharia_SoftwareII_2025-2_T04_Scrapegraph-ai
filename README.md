@@ -6,11 +6,14 @@
 
 | Nome | Matrícula | Contribuição |
 | :--- | :--- | :--- |
-| [Nome do Componente 1] | [Matrícula 1] | [Descrição da Contribuição] |
-| [Nome do Componente 2] | [Matrícula 2] | [Descrição da Contribuição] |
-| [Nome do Componente 3] | [Matrícula 3] | [Descrição da Contribuição] |
-| [Nome do Componente 4] | [Matrícula 4] | [Descrição da Contribuição] |
-| [Nome do Componente 5] | [Matrícula 5] | [Descrição da Contribuição] |
+| Maria Eduarda M. da Silva | 202300038860 | Documentação, Validação Manual e Scripts |
+| Rafael Gomes Oliveira Santos | 202300095730 | Documentação, Validação Manual e Scripts |
+| Cauan Teixeira Machado | 202300038627 | Análise com Modelo 1 (facebook/bart-large-mnli) |
+| Pedro Joaquim Silva Silveira | 202300038897 | Análise com Modelo 1 (facebook/bart-large-mnli) |
+| Breno Silva do Nascimento | 202300038968 | Análise com Modelo 2 (microsoft/unixcoder-base) |
+| José Gabriel R. G. de Almeida | 202300095599 | Análise com Modelo 2 (microsoft/unixcoder-base) |
+| José Victor Ribeiro de Jesus | 202300038799 | Análise com Modelo 3 (google/t5-small) |
+| Mateus da Silva Barreto | 202300038879 | Análise com Modelo 3 (google/t5-small) |
 
 ---
 
