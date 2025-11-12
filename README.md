@@ -45,8 +45,7 @@ Para que os scripts funcionem, a estrutura de pastas do projeto **deve** ser a s
 
 1.  **Clonar o Repositório Alvo:** Na pasta raiz do seu projeto, clone o `Scrapegraph-ai`:
     ```bash
-    git clone [https://github.com/ScrapeGraphAI/Scrapegraph-ai.git](https://github.com/ScrapeGraphAI/Scrapegraph-ai.git)
-    ```
+    git clone https://github.com/ScrapeGraphAI/Scrapegraph-ai.git    ```
 
 2.  **Criar o Ambiente Virtual:**
     ```bash

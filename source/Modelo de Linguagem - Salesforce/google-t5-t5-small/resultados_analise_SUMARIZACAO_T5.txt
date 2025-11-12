@@ -236,5 +236,18 @@ a node that generates a search query based on the user's input and searches the 
 --- RESUMO GERADO (T5-SMALL) ---
 tts_model: An instance of the text-to-speech model client . verbose: flag indicating whether to show print statements during execution . node_name: the unique identifier name for the node, defaulting to "TextToSpeech"
 
+==================================================
+### CONCLUSÃO AUTOMÁTICA DA IA ###
+==================================================
+Total de arquivos analisados: 57
+
+Frequência de termos arquiteturais encontrados nos resumos:
+- Termo 'pipeline': encontrado em 18 resumos.
+- Termo 'node' (nó): encontrado em 29 resumos.
+- Termo 'graph' (grafo): encontrado em 33 resumos.
+
+--- VEREDITO DO SCRIPT ---
+Baseado nas descrições geradas, a arquitetura detectada é: PIPE AND FILTER.
+Justificativa: O modelo descreveu repetidamente os componentes como 'nodes' (filtros) organizados em 'pipelines' ou 'graphs'.
 
 Análise de sumarização concluída.
