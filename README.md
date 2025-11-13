@@ -28,11 +28,14 @@ Para isso, utilizamos três Modelos de Linguagem (LLMs) distintos da plataforma 
 
 A análise conclusiva, baseada nos modelos de código, determinou que o `Scrapegraph-ai` é predominantemente implementado usando o padrão **Pipe and Filter**.
 
+Além disso, foi criado um tutorial em PDF como foi pedido na descrição da Atividade: https://drive.google.com/file/d/11eaHrZ1O2PsnauDPyZyosi1a4elwZbIC/view?usp=sharing
+
 ---
 
 ## 🛠️ 2. Tutorial de Execução e Replicabilidade
 
 Este tutorial detalha o passo a passo para configurar o ambiente e executar os três scripts de análise que produzem os logs de resultado.
+
 
 ### 2.1. Estrutura de Pastas
 
