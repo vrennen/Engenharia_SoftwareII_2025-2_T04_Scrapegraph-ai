@@ -1,4 +1,3 @@
-# Engenharia Software II 2025-2 T04 Scrapegraph-ai
 # 🚀 Atividade 1: Análise de Padrões Arquiteturais com LLMs
 **Repositório da Atividade:** `Engenharia_SoftwareII_2025-2_T04_Scrapegraph-ai`
 
@@ -12,8 +11,8 @@
 | Pedro Joaquim Silva Silveira | 202300038897 | Análise com Modelo 1 (facebook/bart-large-mnli) |
 | Breno Silva do Nascimento | 202300038968 | Análise com Modelo 2 (microsoft/unixcoder-base) |
 | José Gabriel R. G. de Almeida | 202300095599 | Análise com Modelo 2 (microsoft/unixcoder-base) |
-| José Victor Ribeiro de Jesus | 202300038799 | Análise com Modelo 3 (google/t5-small) |
-| Mateus da Silva Barreto | 202300038879 | Análise com Modelo 3 (google/t5-small) |
+| José Victor Ribeiro de Jesus | 202300038799 | Análise com Modelo 3 (t5-small) |
+| Mateus da Silva Barreto | 202300038879 | Análise com Modelo 3 (t5-small) |
 
 ---
 
@@ -37,7 +36,7 @@ Este tutorial detalha o passo a passo para configurar o ambiente e executar os t
 
 ### 2.1. Estrutura de Pastas
 
-Para que os scripts funcionem, a estrutura de pastas do projeto **deve** ser a seguinte:
+Para que os scripts funcionem, a estrutura de pastas do projeto **deve** ser a seguinte: 
 
 📁 [Pasta Raiz do Projeto] │ ├── 📁 Scrapegraph-ai\ (O repositório clonado) │ ├── 📁 venv\ (O ambiente virtual Python) │ ├── 📜 analise_documentacao.py (Script do Modelo 1) ├── 📜 analise_codigo_alternativa.py (Script do Modelo 2) └── 📜 analise_sumarizacao_FINAL.py (Script do Modelo 3)
 
@@ -45,7 +44,8 @@ Para que os scripts funcionem, a estrutura de pastas do projeto **deve** ser a s
 
 1.  **Clonar o Repositório Alvo:** Na pasta raiz do seu projeto, clone o `Scrapegraph-ai`:
     ```bash
-    git clone https://github.com/ScrapeGraphAI/Scrapegraph-ai.git    ```
+    git clone https://github.com/ScrapeGraphAI/Scrapegraph-ai.git
+    ```
 
 2.  **Criar o Ambiente Virtual:**
     ```bash
@@ -118,11 +118,11 @@ A análise de 171 arquivos `.py` válidos foi **decisiva e esmagadora**:
 
 ### Modelo 3: Análise de Código (Sumarização)
 
-Este script valida a descoberta do Modelo 2, pedindo a um modelo de sumarização que *descreva* os arquivos-chave da arquitetura.
+Este script valida a descoberta do Modelo 2, pedindo a um modelo de sumarização que *descreva* os arquivos mais importantes nas pastas `/graphs` e `/nodes`.
 
 * **Modelo:** `t5-small`
-* **Script:** `analise_sumarizacao_FINAL.py`
-* **O que faz:** Varre as pastas cruciais (`/graphs` e `/nodes`) e usa o modelo `t5-small` para gerar um resumo em inglês de cada arquivo `.py` encontrado.
+* **Script:** `analise_SUMARIZACAO_T5.py`
+* **O que faz:** Varre as pastas cruciais (`/graphs` e `/nodes`) e usa o modelo `t5-small` para gerar um resumo em inglês de cada arquivo `.py` encontrado. Em seguida, analisa a frequência de termos arquiteturais nos resumos.
 * **Comando de Execução:**
     ```bash
     python analise_sumarizacao_FINAL.py
@@ -131,16 +131,17 @@ Este script valida a descoberta do Modelo 2, pedindo a um modelo de sumarizaçã
 
 #### 3.1.3. Resultado Detalhado (Modelo 3)
 
-O modelo descreveu com precisão a arquitetura **Pipe and Filter**:
+O script analisou 57 arquivos e gerou os seguintes dados:
 
-* [cite_start]**Arquivos em `/graphs`:** Foram descritos como "scraping **pipeline**" (linha de montagem de scraping). [cite: 8, 11, 13, 16, 20, 25, 27, 29, 32, 35, 37, 39, 41]
-    * [cite_start]Ex: `smart_scraper_graph.py` -> "scraping **pipeline** that automates the process..." [cite: 32]
-* **Arquivos em `/nodes`:** Foram descritos como os componentes (Filtros) da linha de montagem.
-    * [cite_start]Ex: `fetch_node.py` -> "a **node** responsible for **fetching** the HTML content... acts as a **starting point**" [cite: 47, 48]
-    * [cite_start]Ex: `parse_node.py` -> "a **node** responsible for **parsing** HTML content... split into chunks" [cite: 68]
-    * [cite_start]Ex: `conditional_node.py` -> "defines the **next step** in the graph's execution flow... **branching logic**" [cite: 43]
+* **Termo 'graph' (grafo):** Encontrado em 33 resumos.
+* **Termo 'node' (nó):** Encontrado em 29 resumos.
+* **Termo 'pipeline':** Encontrado em 18 resumos.
 
-**Conclusão (Confirmatório):** Este modelo foi **altamente efetivo** como validação qualitativa. Ele descreveu os componentes exatamente como eles são definidos no padrão Pipe and Filter ("pipelines" e "nós" que executam lógica).
+O modelo descreveu consistentemente a arquitetura:
+* **Arquivos em `/graphs`:** Foram descritos como "scraping **pipeline**" (ex: `smart_scraper_graph.py`).
+* **Arquivos em `/nodes`:** Foram descritos como "**node** responsible for fetching/parsing" (ex: `fetch_node.py`, `parse_node.py`).
+
+**Conclusão (Confirmatório):** Este modelo foi **altamente efetivo**. Ele validou a arquitetura **Pipe and Filter** não apenas pela presença das palavras-chave, mas pela descrição funcional correta dos componentes (Nós como unidades de processamento e Grafos como pipelines de orquestração).
 
 ---
 
@@ -152,7 +153,7 @@ O modelo descreveu com precisão a arquitetura **Pipe and Filter**:
 | :--- | :--- | :--- | :--- | :--- |
 | `facebook/bart-large-mnli` | Classificação (Zero-Shot) | Arquivos de Documentação (`.md`) | **Inconclusivo.** Empate técnico (9-9-8) entre Camadas, Pipe/Filter e Microserviços. | **Baixa** |
 | `microsoft/unixcoder-base` | Similaridade de Vetores (Embedding) | Código-Fonte (`.py`) | **Decisivo.** Vitória esmagadora (138 votos) para **Pipe and Filter**. | **Alta** |
-| `t5-small` | Sumarização | Código-Fonte (Arquivos-Chave) | **Confirmatório.** Descreveu os componentes como "**pipeline**" e "**node**". | **Alta** |
+| `t5-small` | Sumarização | Código-Fonte (Arquivos-Chave) | **Confirmatório.** Identificou os termos "**graph**" (33x), "**node**" (29x) e "**pipeline**" (18x). | **Alta** |
 
 ### 4.2. Avaliação de Efetividade (Justificativa)
 
