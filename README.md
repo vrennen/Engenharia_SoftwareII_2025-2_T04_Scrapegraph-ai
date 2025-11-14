@@ -28,7 +28,9 @@ Para isso, utilizamos três Modelos de Linguagem (LLMs) distintos da plataforma 
 
 A análise conclusiva, baseada nos modelos de código, determinou que o `Scrapegraph-ai` é predominantemente implementado usando o padrão **Pipe and Filter**.
 
-Além disso, foi criado um tutorial em PDF como foi pedido na descrição da Atividade: https://drive.google.com/file/d/11eaHrZ1O2PsnauDPyZyosi1a4elwZbIC/view?usp=sharing
+Além disso, foi criado um tutorial em PDF como foi pedido na descrição da Atividade: https://drive.google.com/drive/u/1/folders/1yU5Zi8ZS_l8EF2YbSSM_h13qN-sI7DCH
+
+Aqui também está o link do video tutorial no Youtube: https://youtu.be/XRYl72aVZHw 
 
 ---
 
