@@ -28,9 +28,10 @@ Para isso, utilizamos três Modelos de Linguagem (LLMs) distintos da plataforma 
 
 A análise conclusiva, baseada nos modelos de código, determinou que o `Scrapegraph-ai` é predominantemente implementado usando o padrão **Pipe and Filter**.
 
-Além disso, foi criado um tutorial em PDF como foi pedido na descrição da Atividade: https://drive.google.com/drive/u/1/folders/1yU5Zi8ZS_l8EF2YbSSM_h13qN-sI7DCH
+Além disso, foi criado um tutorial em PDF como foi pedido na descrição da Atividade:[ PDF Tutorial da atividade](https://drive.google.com/drive/u/1/folders/1yU5Zi8ZS_l8EF2YbSSM_h13qN-sI7DCH)
 
-Aqui também está o link do video tutorial no Youtube: https://youtu.be/XRYl72aVZHw 
+Aqui também está o link do video tutorial no Youtube: [ Video Tutorial + Explicativo
+](https://www.youtube.com/watch?v=XRYl72aVZHw)
 
 ---
 
@@ -45,7 +46,12 @@ Para que os scripts funcionem, a estrutura de pastas do projeto **deve** ser a s
 
 📁 [Pasta Raiz do Projeto] │ ├── 📁 Scrapegraph-ai\ (O repositório clonado) │ ├── 📁 venv\ (O ambiente virtual Python) │ ├── 📜 analise_documentacao.py (Script do Modelo 1) ├── 📜 analise_codigo_alternativa.py (Script do Modelo 2) └── 📜 analise_sumarizacao_FINAL.py (Script do Modelo 3)
 
-### 2.2. Configuração do Ambiente
+### 2.2. Modelos de Linguagem Utilizados (Hugging Face)
+* **Modelo 1 (Texto):** [facebook/bart-large-mnli](https://huggingface.co/facebook/bart-large-mnli)
+* **Modelo 2 (Código):** [microsoft/unixcoder-base](https://huggingface.co/microsoft/unixcoder-base)
+* **Modelo 3 (Sumarização):** [google-t5/t5-small](https://huggingface.co/google-t5/t5-small)
+
+### 2.3. Configuração do Ambiente
 
 1.  **Clonar o Repositório Alvo:** Na pasta raiz do seu projeto, clone o `Scrapegraph-ai`:
     ```bash
