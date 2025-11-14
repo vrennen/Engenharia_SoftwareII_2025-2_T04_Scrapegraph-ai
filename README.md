@@ -28,9 +28,14 @@ Para isso, utilizamos três Modelos de Linguagem (LLMs) distintos da plataforma 
 
 A análise conclusiva, baseada nos modelos de código, determinou que o `Scrapegraph-ai` é predominantemente implementado usando o padrão **Pipe and Filter**.
 
-Além disso, foi criado um tutorial em PDF como foi pedido na descrição da Atividade: https://drive.google.com/drive/u/1/folders/1yU5Zi8ZS_l8EF2YbSSM_h13qN-sI7DCH
+### 1.1. Justificativa da Escolha do Projeto 
 
-Aqui também está o link do video tutorial no Youtube: https://youtu.be/XRYl72aVZHw 
+ O `Scrapegraph-ai` foi selecionado como projeto-alvo por ser um exemplo ideal de arquitetura moderna e de um domínio relevante (IA e Web Scraping). Sua estrutura, baseada em "Grafos" e "Nós", sugeria fortemente um padrão arquitetural claro (Pipe and Filter), tornando-o um caso de estudo perfeito para testar se os LLMs conseguiriam identificar esse padrão com precisão.
+
+### 1.2. Links da Atividade
+
+* **Tutorial em PDF:** [PDF Tutorial da atividade](https://drive.google.com/drive/u/1/folders/1yU5Zi8ZS_l8EF2YbSSM_h13qN-sI7DCH)
+* **Vídeo Tutorial (YouTube):** [Video Tutorial + Explicativo](https://www.youtube.com/watch?v=XRYl72aVZHw)
 
 ---
 
@@ -38,115 +43,75 @@ Aqui também está o link do video tutorial no Youtube: https://youtu.be/XRYl72a
 
 Este tutorial detalha o passo a passo para configurar o ambiente e executar os três scripts de análise que produzem os logs de resultado.
 
-
 ### 2.1. Estrutura de Pastas
 
-Para que os scripts funcionem, a estrutura de pastas do projeto **deve** ser a seguinte: 
+Esta é a estrutura de pastas do projeto. Os scripts devem ser executados a partir da **pasta raiz** (`ENGENHARIA_SOFT...`).
+```
+.
+├── reports/              # Relatórios finais e logs de execução
+│   ├── Resultado_Final.md
+│   ├── resultados_analise_CODIGO_Unixcoder.txt
+│   ├── resultados_analise_SUMARIZACAO_T5.txt
+│   └── resultados_analise.txt
+│
+├── scripts/              # Scripts de execução de cada modelo
+│   ├── facebook-bart-large-mnli/
+│   │   └── analise_documentacao.py   (Script 1)
+│   ├── google-t5-t5-small/
+│   │   └── analise_sumarizacao.py    (Script 3)
+│   └── microsoft-unixcoder-base/
+│       └── analise_codigo.py         (Script 2)
+│
+├── Scrapegraph-ai/       # O repositório-alvo clonado
+├── venv/                 # Ambiente virtual Python
+│
+├── README.md             # Este documento
+└── requirements.txt      # Arquivo de dependências 
+```
 
-📁 [Pasta Raiz do Projeto] │ ├── 📁 Scrapegraph-ai\ (O repositório clonado) │ ├── 📁 venv\ (O ambiente virtual Python) │ ├── 📜 analise_documentacao.py (Script do Modelo 1) ├── 📜 analise_codigo_alternativa.py (Script do Modelo 2) └── 📜 analise_sumarizacao_FINAL.py (Script do Modelo 3)
+### 2.2. Modelos de Linguagem Utilizados (Hugging Face)
+* **Modelo 1 (Texto):** [facebook/bart-large-mnli](https://huggingface.co/facebook/bart-large-mnli)
+* **Modelo 2 (Código):** [microsoft/unixcoder-base](https://huggingface.co/microsoft/unixcoder-base)
+* **Modelo 3 (Sumarização):** [google-t5/t5-small](https://huggingface.co/google-t5/t5-small)
 
-### 2.2. Configuração do Ambiente
+### 2.3. Configuração do Ambiente
 
-1.  **Clonar o Repositório Alvo:** Na pasta raiz do seu projeto, clone o `Scrapegraph-ai`:
+1.  **Clonar o Repositório Alvo:**
     ```bash
     git clone https://github.com/ScrapeGraphAI/Scrapegraph-ai.git
     ```
 
-2.  **Criar o Ambiente Virtual:**
+2.  **Criar e Ativar o Ambiente Virtual:**
     ```bash
     python -m venv venv
+    .\venv\Scripts\activate
     ```
 
-3.  **Ativar o Ambiente Virtual:**
-    * **Windows:** `.\venv\Scripts\activate`
-    * **macOS/Linux:** `source venv/bin/activate`
-
-4.  **Instalar Bibliotecas:** Com o `(venv)` ativo, instale todas as dependências necessárias:
+3.  **Instalar Bibliotecas :**
+    Com o `(venv)` ativo, instale todas as dependências usando o arquivo `requirements.txt`:
     ```bash
-    python -m pip install transformers torch sentence-transformers scikit-learn sentencepiece
+    python -m pip install -r requirements.txt
     ```
-    > **Nota:** Se a instalação do `torch` falhar no Windows com um erro de "Caminho Longo" (OSError), você deve habilitar o Suporte a Caminhos Longos no Windows e reiniciar o computador antes de tentar novamente.
+    > **Nota:** Se a instalação do `torch` falhar no Windows com um erro de "Caminho Longo" (OSError), você deve habilitar o Suporte a Caminhos Longos no Windows e reiniciar o computador.
 
 ---
 
 ## ⚙️ 3. Execução e Resultados dos Modelos
 
-Abaixo estão os comandos para executar cada script e os resultados detalhados de cada análise.
-
 ### Modelo 1: Análise de Documentação (Classificação de Texto)
-
-Este script varre o repositório em busca de arquivos `.md` e os classifica em um dos quatro padrões.
-
-* **Modelo:** `facebook/bart-large-mnli`
-* **Script:** `analise_documentacao.py`
-* **O que faz:** Lê cada arquivo `.md`, usa o pipeline de "Zero-Shot Classification" para classificar o texto e conta os "votos" para cada padrão.
-* **Comando de Execução:**
-    ```bash
-    python analise_documentacao.py
-    ```
+* **Comando:** `python analise_documentacao.py`
 * **Arquivo de Saída:** `resultados_analise.txt`
-
-#### 3.1.1. Resultado Detalhado (Modelo 1)
-
-A análise dos 28 arquivos `.md` relevantes resultou em um **empate técnico**:
-
-* **Layered Architecture (MVC or similar):** 9 arquivo(s)
-* **Pipe and Filter / Pipeline Architecture:** 9 arquivo(s)
-* **Microservices Architecture:** 8 arquivo(s)
-* **Monolithic Application:** 2 arquivo(s)
-
-**Conclusão (Inconclusivo):** Este modelo se mostrou **pouco confiável**. A documentação usa termos ambíguos (como "API", "módulo", "serviço") que confundiram o classificador, fazendo-o ver padrões de Microserviços e Camadas onde eles não eram o foco principal.
+* **Resultado:** **Inconclusivo** (Empate técnico 9-9-8).
 
 ### Modelo 2: Análise de Código (Classificação Vetorial)
-
-Este script analisa o código-fonte (`.py`) para desempatar a análise anterior, usando similaridade de vetores.
-
-* **Modelo:** `microsoft/unixcoder-base`
-* **Script:** `analise_codigo_alternativa.py`
-* **O que faz:** Define 4 "protótipos" (descrições) de padrões. Transforma cada arquivo `.py` e cada protótipo em um vetor (embedding). Compara a similaridade de cosseno entre o código e os protótipos, e vota no padrão mais "próximo".
-* **Comando de Execução:**
-    ```bash
-    python analise_codigo_alternativa.py
-    ```
+* **Comando:** `python analise_codigo_alternativa.py`
 * **Arquivo de Saída:** `resultados_analise_CODIGO_Unixcoder.txt`
-
-#### 3.1.2. Resultado Detalhado (Modelo 2)
-
-A análise de 171 arquivos `.py` válidos foi **decisiva e esmagadora**:
-
-* **Pipe and Filter:** 138 arquivo(s)
-* **Microservices:** 20 arquivo(s)
-* **Monolithic:** 10 arquivo(s)
-* **Layered / MVC:** 3 arquivo(s)
-
-**Conclusão (Decisivo):** Este modelo foi **altamente efetivo**. Ao analisar o código-fonte, ele ignorou a ambiguidade da documentação e identificou corretamente que a vasta maioria dos arquivos (exemplos, grafos e nós) implementa o padrão **Pipe and Filter**.
+* **Resultado:** **Decisivo**. Vitória esmagadora do **Pipe and Filter** (138 votos).
 
 ### Modelo 3: Análise de Código (Sumarização)
-
-Este script valida a descoberta do Modelo 2, pedindo a um modelo de sumarização que *descreva* os arquivos mais importantes nas pastas `/graphs` e `/nodes`.
-
-* **Modelo:** `t5-small`
-* **Script:** `analise_SUMARIZACAO_T5.py`
-* **O que faz:** Varre as pastas cruciais (`/graphs` e `/nodes`) e usa o modelo `t5-small` para gerar um resumo em inglês de cada arquivo `.py` encontrado. Em seguida, analisa a frequência de termos arquiteturais nos resumos.
-* **Comando de Execução:**
-    ```bash
-    python analise_sumarizacao_FINAL.py
-    ```
+* **Comando:** `python analise_sumarizacao_FINAL.py`
 * **Arquivo de Saída:** `resultados_analise_SUMARIZACAO_T5.txt`
-
-#### 3.1.3. Resultado Detalhado (Modelo 3)
-
-O script analisou 57 arquivos e gerou os seguintes dados:
-
-* **Termo 'graph' (grafo):** Encontrado em 33 resumos.
-* **Termo 'node' (nó):** Encontrado em 29 resumos.
-* **Termo 'pipeline':** Encontrado em 18 resumos.
-
-O modelo descreveu consistentemente a arquitetura:
-* **Arquivos em `/graphs`:** Foram descritos como "scraping **pipeline**" (ex: `smart_scraper_graph.py`).
-* **Arquivos em `/nodes`:** Foram descritos como "**node** responsible for fetching/parsing" (ex: `fetch_node.py`, `parse_node.py`).
-
-**Conclusão (Confirmatório):** Este modelo foi **altamente efetivo**. Ele validou a arquitetura **Pipe and Filter** não apenas pela presença das palavras-chave, mas pela descrição funcional correta dos componentes (Nós como unidades de processamento e Grafos como pipelines de orquestração).
+* **Resultado:** **Confirmatório**. O modelo descreveu os arquivos usando termos como "pipeline" (18x), "node" (29x) e "graph" (33x).
 
 ---
 
@@ -156,13 +121,42 @@ O modelo descreveu consistentemente a arquitetura:
 
 | Modelo | Tarefa de NLP | Alvo da Análise | Resultado da Identificação | Efetividade |
 | :--- | :--- | :--- | :--- | :--- |
-| `facebook/bart-large-mnli` | Classificação (Zero-Shot) | Arquivos de Documentação (`.md`) | **Inconclusivo.** Empate técnico (9-9-8) entre Camadas, Pipe/Filter e Microserviços. | **Baixa** |
-| `microsoft/unixcoder-base` | Similaridade de Vetores (Embedding) | Código-Fonte (`.py`) | **Decisivo.** Vitória esmagadora (138 votos) para **Pipe and Filter**. | **Alta** |
-| `t5-small` | Sumarização | Código-Fonte (Arquivos-Chave) | **Confirmatório.** Identificou os termos "**graph**" (33x), "**node**" (29x) e "**pipeline**" (18x). | **Alta** |
+| `facebook/bart-large-mnli` | Classificação (Zero-Shot) | Documentação (`.md`) | **Inconclusivo.** Empate técnico (9-9-8). | **Baixa** |
+| `microsoft/unixcoder-base` | Similaridade de Vetores (Embedding) | Código-Fonte (`.py`) | **Decisivo.** Vitória (138 votos) para **Pipe and Filter**. | **Alta** |
+| `google/t5-small` | Sumarização | Código-Fonte (Arquivos-Chave) | **Confirmatório.** Descreveu "graph" (33x), "node" (29x), "pipeline" (18x). | **Alta** |
 
-### 4.2. Avaliação de Efetividade (Justificativa)
+### 4.2. Validação Manual e Efetividade 
 
-Conforme a tabela acima, os modelos de análise de código-fonte foram **significativamente mais efetivos** do que o modelo de análise de texto.
+Para validar os resultados da IA, realizamos uma **análise humana (manual)** do código-fonte, que serviu como nosso "gabarito".
 
-* **Menos Efetivo:** O `facebook/bart-large-mnli` (Modelo 1) foi o menos efetivo. Sua análise da documentação foi "envenenada" pela ambiguidade da linguagem humana. Termos como "serviço" (referindo-se à API do OpenAI) e "módulo" (referindo-se a arquivos Python) o levaram a classificar erroneamente os arquivos como Microserviços ou Camadas.
-* **Mais Efetivos:** O `microsoft/unixcoder-base` (Modelo 2) foi o mais efetivo para uma identificação *quantitativa*. Ao analisar o código-fonte, ele foi capaz de determinar qual padrão era de fato o mais implementado, resolvendo o empate. O `t5-small` (Modelo 3) foi o complemento perfeito, fornecendo validação *qualitativa* ao descrever a arquitetura exatamente como ela é: uma coleção de **Pipelines (Grafos)** e **Filtros (Nós)**.
+1.  **Análise Manual:** Uma inspeção das pastas `/nodes` e `/graphs` do `Scrapegraph-ai` confirma que a arquitetura é **Pipe and Filter**. Os "Nodes" são os Filtros (tarefas únicas) e os "Graphs" são os Orquestradores (Pipelines) que os conectam.
+2.  **Validação dos Modelos:**
+    * **Modelo 1 (Texto): REPROVADO.** Falhou por ser "enganado" pela ambiguidade da documentação (palavras como "API" e "módulo").
+    * **Modelo 2 (Código): APROVADO.** Ignorou o ruído textual e identificou corretamente o padrão dominante no código, batendo 100% com nosso gabarito.
+    * **Modelo 3 (Sumarização): APROVADO.** Validou o Modelo 2, descrevendo qualitativamente os componentes com os termos corretos ("node", "pipeline").
+
+### 4.3. Dificuldades e Limitações Encontradas 
+
+Durante a execução, enfrentamos diversos desafios técnicos que são cruciais para a reprodutibilidade:
+
+* **Falha de Modelos:** As primeiras tentativas com modelos da Salesforce (ex: `codet5p-110m-embedding`) falharam repetidamente com erros de `trust_remote_code` e incompatibilidade de dimensionalidade (`1D vs 2D array`), exigindo a troca para modelos mais robustos.
+* **Limitação de Ambiente (Windows):** A instalação do `torch` falhou com um `OSError: No such file or directory`. Isso foi causado pelo limite de 260 caracteres para nomes de caminho no Windows. A correção exigiu a habilitação do "Long Paths Support" no registro do Windows.
+* **Bugs de Tokenizer:** O Modelo 2 (`unixcoder-base`), embora bem-sucedido na maioria, falhou em 38 arquivos (ex: `abstract_graph.py`) com um erro de `index out of range`, indicando um bug no tokenizer do modelo ao processar certas sintaxes de Python.
+
+---
+
+## 🖥️ 5. Infraestrutura Utilizada 
+
+ Toda a análise foi executada em um ambiente **Local**. As especificações da máquina utilizada para os testes e geração de resultados foram:
+
+* **CPU:** AMD Ryzen 5 3400G with Radeon Vega Graphics     (3.70 GHz)
+* **GPU:** Veneida RX580 8 GB DDR5 AMD
+* **Memória RAM:** 24 GB DDR4 32000MhZ
+* **Sistema Operacional:** Windows 11 Pro
+* **Ambiente:** Python 3.10 (via venv)
+
+---
+
+## 🏁 6. Conclusão Final
+
+A lição final desta atividade é clara: para a análise de arquitetura de software, o **código-fonte é uma fonte de verdade muito mais confiável do que a documentação**. Os modelos de IA treinados especificamente para código (`unixcoder-base` e `t5-small`) são as ferramentas mais adequadas para a tarefa, pois ignoram o "ruído" da linguagem natural e focam na semântica da implementação.

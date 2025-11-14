@@ -25,7 +25,8 @@ pastas_relevantes = [
     os.path.join(path_do_repositorio, 'scrapegraphai', 'nodes')
 ]
 
-arquivo_saida_txt = 'resultados_analise_SUMARIZACAO_T5.txt'
+
+arquivo_saida_txt = os.path.join('Resultados', 'resultados_analise_SUMARIZACAO_T5.txt')
 
 # Lista para guardar todos os resumos gerados para a conclusão final
 todos_os_resumos = []
@@ -45,7 +46,7 @@ try:
 
         if not os.path.exists(path_do_repositorio):
             log_and_print(f"!! ERRO CRÍTICO: Pasta '{path_do_repositorio}' não encontrada.")
-            log_and_print("!! Verifique se o script está na mesma pasta que o repositório clonado.")
+            log_and_print("!! Verifique se você rodou o script da pasta raiz.")
             exit()
 
         # Varredura de Arquivos
@@ -83,7 +84,7 @@ try:
                         except Exception as e:
                             log_and_print(f"!! Erro ao processar {caminho_arquivo}: {e}")
 
-        # --- NOVA SEÇÃO: GERAÇÃO DA CONCLUSÃO AUTOMÁTICA ---
+        # ---  GERAÇÃO DA CONCLUSÃO AUTOMÁTICA ---
         
         log_and_print("\n" + "="*50)
         log_and_print("### CONCLUSÃO AUTOMÁTICA DA IA ###")

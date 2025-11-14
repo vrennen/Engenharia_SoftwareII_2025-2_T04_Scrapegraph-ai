@@ -3,10 +3,11 @@ from transformers import pipeline
 from collections import Counter 
 
 # 1. Carregamento do Modelo
-print("Carregando o modelo facebook/bart-large-mnli... (Aguarde)")
+MODEL_NAME = "facebook/bart-large-mnli"
+print(f"Carregando modelo: {MODEL_NAME}... (Aguarde)")
 classificador = pipeline(
     "zero-shot-classification", 
-    model="facebook/bart-large-mnli"
+    model=MODEL_NAME
 )
 print("Modelo carregado com sucesso.")
 
@@ -20,7 +21,9 @@ candidatos_padroes = [
 
 # 3. Definição dos Caminhos
 path_do_repositorio = 'Scrapegraph-ai' 
-arquivo_saida_txt = 'resultados_analise.txt' 
+
+# Salva na pasta 'Resultados' que está na raiz
+arquivo_saida_txt = os.path.join('Resultados', 'resultados_analise.txt')
 
 # 4. Lista para guardar os resultados
 resultados_finais = []
@@ -29,34 +32,28 @@ resultados_finais = []
 try:
     with open(arquivo_saida_txt, 'w', encoding='utf-8') as f:
         
-        # Função helper: Imprime na tela E escreve no arquivo .txt
         def log_and_print(message):
-            print(message)               # Imprime na tela
-            f.write(message + '\n')  # Escreve no arquivo
-            f.flush()                # <-- A CORREÇÃO ESTÁ AQUI
-        
-        # ----- Início da Análise -----
+            print(message)
+            f.write(message + '\n')
+            f.flush()
         
         log_and_print(f"### INÍCIO DA ANÁLISE DE ARQUITETURA ###")
         log_and_print(f"Repositório: {path_do_repositorio}")
-        log_and_print(f"Modelo: facebook/bart-large-mnli")
+        log_and_print(f"Modelo: {MODEL_NAME}")
         log_and_print("-" * 40)
         
         log_and_print(f"\nIniciando varredura de arquivos .md em: {path_do_repositorio}...")
 
-        # Verifica se o repositório existe antes de continuar
         if not os.path.exists(path_do_repositorio):
             log_and_print(f"\n!!! ERRO CRÍTICO !!!")
             log_and_print(f"A pasta '{path_do_repositorio}' não foi encontrada.")
-            log_and_print(f"Verifique se você clonou o repositório para a pasta correta.")
+            log_and_print(f"Verifique se você rodou o script da pasta raiz.")
             raise FileNotFoundError(f"Repositório não encontrado em: {path_do_repositorio}")
 
         for root, dirs, files in os.walk(path_do_repositorio):
             
-            if '.git' in dirs:
-                dirs.remove('.git')
-            if 'venv' in dirs:
-                dirs.remove('venv')
+            if '.git' in dirs: dirs.remove('.git')
+            if 'venv' in dirs: dirs.remove('venv')
 
             for file in files:
                 if file.endswith('.md'):
@@ -108,9 +105,8 @@ try:
     print(f"\nSucesso! 🚀 Resultados salvos em: {arquivo_saida_txt}")
 
 except FileNotFoundError as e:
-    # Esta mensagem só aparecerá no console
     print(f"\nERRO: {e}")
 except IOError as e:
-    print(f"ERRO: Não foi possível escrever no arquivo {arquivo_saida_txt}. Verifique as permissões.")
+    print(f"ERRO: Não foi possível escrever no arquivo {arquivo_saida_txt}.")
 except Exception as e:
     print(f"Um erro inesperado ocorreu: {e}")
